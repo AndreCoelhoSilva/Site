@@ -1,0 +1,46 @@
+.navbar-nav .nav-link {
+    color: white; /
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: lightgray; 
+}
+
+h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.carousel-item {
+    height: 720px; 
+}
+.carousel-item img,
+.carousel-item video {
+    height: 100%;
+    width: 100%;  
+    object-fit: cover; 
+}
+
+.custom-btn {
+    background-color: #007bff; 
+    border: none;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; 
+    color: white; 
+}
+
+.modal-image {
+    max-width: 80%; 
+    height: auto; 
+    margin: 2%; 
+    display: block; 
+}

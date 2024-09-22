@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Photograph</title>
+</head>
+
+<body>
+    <header class="container-fluid p-2 bg-dark text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Luz e Sombra</a>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Estudo</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Procurar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel/viagem 1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/viagem 3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel/viagem 4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="container-fluid bg-dark text-center text-white p-2">
+        <h2>Um Click, um Momento</h2>
+        <p>
+            Phasellus imperdiet, quam et consectetur semper, est tellus tincidunt nisl, dapibus malesuada enim libero
+            vitae
+            neque. Praesent condimentum feugiat nunc sed tristique. Curabitur non vehicula lorem. Integer dictum nisl
+            non
+            enim iaculis euismod. Nam faucibus leo massa, a varius justo eleifend sed. In hac habitasse platea dictumst.
+            In
+            porttitor odio neque, eget varius lectus rhoncus eget. Curabitur in placerat sem, at euismod turpis.
+            Phasellus
+            tincidunt vel urna vel vestibulum. Curabitur id vehicula dolor. Mauris lobortis tincidunt erat vitae
+            posuere.
+            Duis posuere, ex vitae accumsan efficitur, tortor augue tristique nulla, tristique posuere lectus metus quis
+            dolor.
+            <br><br>
+    </section>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark" onclick="openModal('img/jakob-owens-T7TLYFHgKt0-unsplash.jpg')">
+                    <img src="img/jakob-owens-T7TLYFHgKt0-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white p-3">
+                        <h5 class="card-title">Como Começar ?</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
+                            convallis dui. </p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark" onclick="openModal('img/jakob-owens-DQPP9rVLYGQ-unsplash.jpg')">
+                    <img src="img/jakob-owens-DQPP9rVLYGQ-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white p-3">
+                        <h5 class="card-title">Técnicas</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
+                            convallis dui. </p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark" onclick="openModal('img/glenn-carstens-peters-SL5d_8ywAAA-unsplash.jpg')">
+                    <img src="img/glenn-carstens-peters-SL5d_8ywAAA-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-white p-3">
+                        <h5 class="card-title">Tipos de Edição</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non
+                            convallis dui. </p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="fullScreenModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-center">
+                    <img id="modalImage" src="" class="modal-image" alt="Modal Image">
+                    </be>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non convallis
+                        dui. Sed convallis, enim quis fringilla aliquam, odio nisi elementum velit, id dapibus risus est
+                        ut ante. Pellentesque vitae ornare orci, sit amet pretium urna. Cras ac ante felis. Morbi
+                        vulputate rutrum urna, non mollis velit. Quisque et pharetra ante, sed sollicitudin neque. Etiam
+                        posuere felis vel sem scelerisque, congue lacinia lectus efficitur. Pellentesque quis est
+                        congue, tempor nisi ac, fermentum felis.
+
+                        Praesent vitae quam ut purus elementum eleifend quis et justo. Donec elementum risus purus, eu
+                        commodo turpis aliquet eget. Proin sodales auctor urna, ac molestie augue cursus vel. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam
+                        posuere ligula hendrerit odio dapibus, et semper lectus maximus. Fusce eleifend urna ac risus
+                        ullamcorper dignissim. Etiam laoreet nunc nec risus viverra venenatis.
+
+                        Aenean purus metus, lacinia a commodo at, scelerisque at nisi. Mauris vitae malesuada lorem.
+                        Pellentesque ac ante magna. Pellentesque sed fringilla leo. Donec luctus tortor eu tristique
+                        congue. Maecenas id maximus risus. Aenean imperdiet vestibulum urna.
+
+                        Pellentesque convallis finibus nulla. Nam feugiat odio eu hendrerit porta. Praesent sit amet
+                        tincidunt ligula. Nunc neque est, finibus eget magna nec, tempus hendrerit dolor. Maecenas
+                        mattis sollicitudin magna, ut imperdiet mauris posuere fringilla. Vestibulum dolor orci,
+                        sollicitudin a faucibus vel, interdum vel urna. Quisque quis auctor dolor. Mauris urna augue,
+                        tincidunt in nisi at, dignissim tristique lacus. Nam eu augue nec est tempor vehicula quis et
+                        justo. Sed eu nisl suscipit, ultricies orci id, scelerisque elit. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut porttitor mi, sit
+                        amet faucibus lorem.
+
+                        Maecenas id dui a ligula imperdiet bibendum. Praesent erat enim, tempor ac semper in, fringilla
+                        at quam. Donec porttitor at neque nec posuere. Suspendisse eu consequat velit. Proin et placerat
+                        elit. Cras ex mi, aliquam at erat nec, semper malesuada nibh. Ut quis auctor tortor. Nulla
+                        accumsan, nunc vitae imperdiet tristique, nisi orci pretium eros, non facilisis velit velit in
+                        dolor.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="year"></span> Todos os direitos reservados. <br>By: André<br></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            var modal = new bootstrap.Modal(document.getElementById('fullScreenModal'));
+            modal.show();
+        }
+    </script>
+</body>
+
+</html>
